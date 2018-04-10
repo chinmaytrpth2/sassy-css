@@ -1,0 +1,592 @@
+/* latin-ext */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    padding: 1em;
+}
+
+/*-------------<fieldset>-------------*/
+
+fieldset {
+    margin: 0.2em;
+    padding: 1.5em;
+    border: 1px solid gray;
+}
+
+
+/*-------------</input>-------------*/
+
+
+/*-------------<input>-------------*/
+
+input {
+    height: 35px;
+    border: 1px solid gray;
+}
+
+
+/*-------------</input>-------------*/
+
+
+/*-------------<button reset submit>-------------*/
+
+input[type=button],
+input[type=reset],
+input[type=submit] {
+    min-width: 65px;
+    padding: 0.5em;
+    background: white;
+    border: 1px solid gray;
+    transition: 0.3s ease-in;
+}
+
+input[type=button]:hover,
+input[type=reset]:hover,
+input[type=submit]:hover {
+    color: white;
+    background: lightgray;
+    border: 1px solid gray;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+
+/*-------------</button reset submit>-------------*/
+
+
+/*-------------<checkbox>-------------*/
+
+input[type=checkbox],
+input[type=radio] {
+    width: 30px;
+    vertical-align: middle;
+}
+
+
+/*-------------</checkbox>-------------*/
+
+
+/*-------------<radio>-------------*/
+
+input[type=radio] {
+    height: 30px;
+}
+
+/*-------------</radio>-------------*/
+
+
+/*-------------<file>-------------*/
+
+input[type=file] {
+    height: auto;
+}
+
+/*-------------</radio>-------------*/
+
+
+/*-------------<color picker>-------------*/
+
+input[type=color] {
+    width: 55px;
+    height: 25px;
+}
+
+input::-webkit-color-swatch-wrapper {
+    background-color: white;
+}
+
+input::-webkit-color-swatch {
+    height: 60%;
+    border: none;
+    margin-top: 6%;
+}
+
+
+/*-------------</color picker>-------------*/
+
+
+/*-------------<slider>-------------*/
+
+input[type=range] {
+    height: 30px;
+    width: 150px;
+    border: none;
+    vertical-align: middle;
+    -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    animation: 0.2s;
+    background: #fff;
+    border: 1px solid gray;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    margin-top: -12px;
+    border: 1px solid gray;
+    height: 30px;
+    width: 13px;
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+
+/*-------------</slider>-------------*/
+
+
+/*-------------<input[type=image]>-------------*/
+
+input[type=image] {
+    line-height: 30px;
+}
+
+
+/*-------------</input[type=image]>-------------*/
+
+
+/*-------------<radio>-------------*/
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=datetime-local]::-webkit-inner-spin-button,
+input[type=month]::-webkit-inner-spin-button,
+input[type=time]::-webkit-inner-spin-button,
+input[type=week]::-webkit-inner-spin-button {
+    height: 100%;
+}
+
+
+/*-------------</radio>-------------*/
+
+
+/*-------------<heading paragraph>-------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    padding: 1em;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*-------------</heading paragraph>-------------*/
+
+
+
+
+/*-------------<list>-------------*/
+
+ul {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul li {
+    padding: 0.5em;
+    font-family: 'Raleway', sans-serif;
+}
+
+ol {
+    font-family: 'Raleway', sans-serif;
+}
+
+ol li {
+    padding: 0.5em;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/*-------------</list>-------------*/
+
+
+/*-------------<iframe>-------------*/
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+
+/*-------------</iframe>-------------*/
+
+
+/*-------------<code>-------------*/
+
+code {
+    margin: 1em 1em;
+    color: black;
+    line-height: 150%;
+}
+
+
+/*-------------</code>-------------*/
+
+
+/*-------------<pre>-------------*/
+
+pre {
+    background: #f7f7f7;
+    color: black;
+    padding: 1em;
+}
+
+
+/*-------------</pre>-------------*/
+
+
+/*-------------<table>-------------*/
+
+table {
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+table th, table td {
+    border-bottom: 1px dotted black;
+    text-align: center;
+    padding: 8px;
+}
+
+
+/*-------------</table>-------------*/
+
+
+/*-------------<.bordered_table>-------------*/
+
+.table_bordered {
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid black;
+}
+
+
+/*-------------</.bordered_table>-------------*/
+
+
+
+/*-------------<container container-fluid>-------------*/
+
+.container {
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+    margin: auto;
+    overflow: auto;
+}
+
+.container h1 {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.container-fluid {
+    font-family: 'Raleway', sans-serif;
+    height: 300px;
+    width: 100%;
+}
+
+.container-fluid h1 {
+    font-size: 60px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+/*-------------</container container-fluid>-------------*/
+
+
+/*-------------<grand>-------------*/
+
+.grand {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 250px;
+    margin: auto;
+    background: #F0F0F0;
+}
+
+.grand h1 {
+    font-size: 50px;
+    padding-top: 45px;
+    padding-left: 30px;
+    font-weight: bolder;
+}
+
+.grand p {
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+
+/*-------------</grand>-------------*/
+
+/*-------------BUTTONS-------------*/
+
+.btn{
+  min-width: 65px;
+  font-weight: bold;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  background: white;
+  font-family: 'Raleway';
+  border: 1px solid black;
+}
+.btn:hover{
+  border-radius: 5px;
+  background: black;
+  color:white;
+  border: 1px solid white;
+  transition: 0.3s ease-in;
+}
+
+/*-------------Danger-------------*/
+
+.btn-danger{
+  color:#ff3333;
+  border: 1px solid #ff3333;
+}
+.btn-danger:hover{
+  background: #ff3333;
+  color:white;
+  border: 1px solid white;
+  transition: 0.3s ease-in;
+}
+
+/*-------------Primary-------------*/
+
+.btn-primary{
+  color:#1a75ff;
+  border: 1px solid #1a75ff;
+
+}
+.btn-primary:hover{
+  background:#1a75ff;
+  color:white;
+  border: 1px solid #1a75ff;
+  transition: 0.3s ease-in;
+}
+
+/*-------------Success-------------*/
+
+.btn-success{
+  color:#00b300;
+  border: 1px solid #00b300;
+
+}
+.btn-success:hover{
+  background: #00b300;
+  color:white;
+  border: 1px solid #00b300;
+  transition: 0.3s ease-in;
+}
+
+/*-------------Warning-------------*/
+
+.btn-warning{
+  color:#e6b800;
+  border: 1px solid #e6b800;
+}
+.btn-warning:hover{
+  background: #e6b800;
+  color:white;
+  border: 1px solid #e6b800;
+  transition: 0.3s ease-in;
+}
+
+/*-------------Info-------------*/
+
+.btn-info{
+  color:#33adff;
+  border: 1px solid #33adff;
+}
+.btn-info:hover{
+  background: #33adff;
+  color:white;
+  border: 1px solid #33adff;
+  transition: 0.3s ease-in;
+}
+
+/*-------------Alerts-------------*/
+
+.alert{
+  width: 90%;
+  height: 50px;
+  border: 1px solid black;
+  padding-left: 20px;
+  font-family: 'Raleway';
+}
+.alert span{
+  float: right;
+  margin-right: 15px;
+  font-size: 200%;
+  margin-top:-10px;
+}
+
+/*-------------Danger-------------*/
+
+.alert-danger{
+  border: 1px solid #ff3333;
+  border-radius: 5px;
+  color: #ff3333
+}
+.alert-danger span{
+  float: right;
+  margin-right: 15px;
+  font-size: 200%;
+  margin-top:-10px;
+}
+
+/*-------------Info-------------*/
+
+.alert-info{
+  border: 1px solid #33adff;
+  border-radius: 5px;
+  color: #33adff
+}
+.alert-info span{
+  float: right;
+  margin-right: 15px;
+  font-size: 200%;
+  margin-top:-10px;
+}
+
+/*-------------Warning-------------*/
+
+.alert-warning{
+  border: 1px solid #e6b800;
+  border-radius: 5px;
+  color:#e6b800;
+}
+.alert-warning span{
+  float: right;
+  margin-right: 15px;
+  font-size: 200%;
+  margin-top:-10px;
+}
+
+/*-------------Danger-------------*/
+
+.alert-success{
+  border: 1px solid #00b300;
+  border-radius: 5px;
+  color: #00b300;
+}
+.alert-success span{
+  float: right;
+  margin-right: 15px;
+  font-size: 200%;
+  margin-top:-10px;
+}
+
+/*-------------Images-------------*/
+
+
+.img-rounded{
+  border-radius: 5px;
+}
+.img-circle{
+  border-radius: 50%;
+}
+.img-thumbnail{
+  outline: 1px solid black;
+  outline-offset: 5px;
+}
+
+/*-------------NavBar-------------*/
+
+.polo{
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  font-family: "Raleway";
+  border-bottom: 2px solid black;
+}
+.brand-name{
+  width: 250px;
+  border-right: 2px solid black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.brand-name p{
+}
+.links{
+  width: 800px;
+  margin-top: 30px;
+}
+.links a{
+  color:black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left:45px;
+}
+.links a:hover{
+  border-bottom: 1px solid black;
+}
+.search{
+  width: 300px;
+}
+.search input{
+  margin-top:20px;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+.search input[type=submit]{
+  border-radius: 4px;
+  font-weight: bold;
+}
+.search input[type=submit]:hover{
+  background: black;
+  color:white;
+}
